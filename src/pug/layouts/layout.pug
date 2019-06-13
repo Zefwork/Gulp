@@ -1,0 +1,15 @@
+include ../mixins/product-card.pug
+include ../mixins/product-card-big.pug
+
+block variables
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title #{title}
+    link(rel='stylesheet', href='css/main.css')
+    link(href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Montserrat:400,500,600,700&display=swap', rel='stylesheet')
+  body
+    block content
+    script(src='js/main.js')

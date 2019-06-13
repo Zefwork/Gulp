@@ -1,0 +1,28 @@
+extends ../layouts/layout.pug
+
+
+block variables
+  -var title = 'Main2'
+
+block content
+  include ../sections/header.pug
+  include ../sections/header-navigation.pug
+
+  .container 
+    .row
+      .col-md-3
+        +product-card('apple-tv.jpg', 'Apple TV 32GB', 'Black', '$49.99')
+      .col-md-3
+        +product-card('watch.jpg', 'Pabble Time', 'Red', '$29.99')
+      .col-md-6
+        +product-card-big('jbl-bg.jpg', 'JBL 2+', 'Black', '$39.99', '16 GB')
+      .col-md-3
+        +product-card('zendure.jpg', 'Zendure 4-Port USB', 'Black', '$39.99')
+      .col-md-3
+        +product-card('analyzer.jpg', 'Withings Smart Body Analyzer ws-50', 'Black', '$49.99')
+      .col-md-3
+        +product-card('ollo.jpg', 'Ollo Clip New', 'Silver', '$19.99')
+      .col-md-3
+        +product-card('tracker.jpg', 'Pabble Time', 'Red', '$29.99')
+      .col-md-3
+        +product-card('watch.jpg', 'Fitbit Charge HR Heart Rate and Activity Tracker', 'Black', '$19.99')
